@@ -83,6 +83,7 @@ class Pong {
       player.bottom > ball.top
     ) {
       ball.vel.x = -ball.vel.x;
+      ball.vel.len *= 1.05;
     }
   }
   draw() {
